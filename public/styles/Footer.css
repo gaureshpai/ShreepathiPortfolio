@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-color: rgb(0, 0, 0);
+  --background-start-color: #f3f4f6;
+  --background-end-color: #ffffff;
+  --primary-color: #a300f5;
+  --hover-color: #e90dda63;
+  --title-hover-color: #f3f87a;
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+    --foreground-color: rgb(0, 0, 0);
+    --background-start-color: #f3f4f6;
+    --background-end-color: #ffffff;
+    --primary-color: #a300f5;
+    --hover-color: #e90dda63;
+    --title-hover-color: #e0ee1a;
+  }
+}
+.footer-container {
+    color: white;
+    padding: 1rem 0;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.footer-box {
+    text-align: center;
+}
+
+.footer-box p {
+    margin: 0;
+}

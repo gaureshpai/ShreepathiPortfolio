@@ -1,48 +1,33 @@
-/* Tailwind CSS directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom CSS variables for color scheme */
 :root {
   --foreground-color: rgb(0, 0, 0);
   --background-start-color: #f3f4f6;
-  /* Light gray */
   --background-end-color: #ffffff;
-  /* White */
-  --primary-color: #ea510f;
-  /* Purple */
-  --hover-color: #e91f0d;
-  /* Lighter shade of purple */
+  --primary-color: #a300f5;
+  --hover-color: #e90dda63;
   --title-hover-color: #f3f87a;
-  /* Yellowish */
 }
 
-/* Dark mode */
 @media (prefers-color-scheme: dark) {
 :root {
     --foreground-color: rgb(0, 0, 0);
     --background-start-color: #f3f4f6;
-    /* Light gray */
     --background-end-color: #ffffff;
-    /* White */
-    --primary-color: #ea510f;
-    /* Purple */
-    --hover-color: #e91f0d;
-    /* Lighter shade of purple */
-    --title-hover-color: #f3f87a;
-    /* Yellowish */
+    --primary-color: #a300f5;
+    --hover-color: #e90dda63;
+    --title-hover-color: #e0ee1a;
   }
 }
 
-/* General navbar styles */
 nav {
   background-color: var(--primary-color);
   color: white;
   padding: 1rem;
 }
 
-/* Container styles */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -52,11 +37,11 @@ nav {
   padding: 1rem;
 }
 
-/* Title and logo styles */
 .titleb {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: flex;
   align-items: center;
-  text-decoration: none; /* Remove default underline */
+  text-decoration: none;
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
@@ -64,30 +49,34 @@ nav {
 
 .titleb:hover {
   opacity: 0.8;
-  color: var(--title-hover-color); /* Yellowish color on hover */
+  color: var(--title-hover-color);
 }
 
 .titleb img {
-  margin-right: 0.5rem; /* Margin between the logo and text */
+  margin-right: 0.5rem;
 }
 
-/* Button container styles */
 .button-container {
   display: flex;
-  gap: 1rem; /* Gap between buttons */
+  gap: 1rem;
 }
 
-/* Button styles */
 .buttons {
   color: white;
   text-decoration: none;
-  padding: 0.5rem 1rem; /* Adjust padding as needed */
-  border-radius: 0.25rem; /* Add some border radius */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-  background-color: var(--primary-color); /* Use primary color for background */
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+  background-color: var(--primary-color);
 }
 
 .buttons:hover {
-  background-color: var(--hover-color); /* Lighter shade of primary color on hover */
-  color: var(--title-hover-color); /* Change text color on hover */
+  background-color: var(--hover-color);
+  color: var(--title-hover-color); 
+}
+
+.buttons-container-main{
+  display: flex;
+  flex-direction: row;
+
 }
