@@ -29,6 +29,16 @@ export default function Navbar() {
               </a>
             </div>
             <div className="button-container">
+              <a href="https://www.instagram.com/mr_shree__acharya_/" target="_blank" rel="noopener noreferrer" className="buttons" title="Instagram">
+                <img src="insta.png" alt="instagram" />
+              </a>
+            </div>
+            <div className="button-container">
+              <a href="tel:+919686310381" className="buttons" title="Phone">
+                <img src="call.png" alt="phone" />
+              </a>
+            </div>
+            <div className="button-container">
               <a href="Mailto:shreepathishree7@gmail.com" target="_blank" rel="noopener noreferrer" className="buttons" title="Mailto">
                 <img src="/mailto.png" alt="mailto" />
               </a>
@@ -38,8 +48,8 @@ export default function Navbar() {
       </nav>
       <aside className="sidebar">
         <ul>
-          <li><a href="#about" title="About"><img src="/about.png" alt="about"  className=""/></a></li>
-          <li><a href="#education" title="Education"><img src="/education.png" alt="education"  className=""/></a></li>
+          <li><a href="#about" title="About"><img src="/about.png" alt="about" className="" /></a></li>
+          <li><a href="#education" title="Education"><img src="/education.png" alt="education" className="" /></a></li>
           <li><a href="#certificates" title="Certificates"><img src="/cert.png" alt="certificates" className="" /></a></li>
           <li><a href="#skills" title="Skills"><img src="/skills.png" alt="skills" className="" /></a></li>
           <li><a href="#contact" title="Contact"><img src="/contact.png" alt="contact" className="" /></a></li>

@@ -17,7 +17,7 @@
 
 .form-group {
   margin-bottom: 20px;
-  width: 80%; /* Reduce the width to avoid stretching on larger screens */
+  width: 80%;
 }
 
 label {
@@ -55,4 +55,11 @@ button {
 
 button:hover {
   background-color: var(--hover-color);
+}
+
+.title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
 }
