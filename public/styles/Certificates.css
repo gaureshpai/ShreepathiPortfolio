@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-color: rgb(0, 0, 0);
+  --background-start-color: #f3f4f6;
+  --background-end-color: #ffffff;
+  --primary-color: #a300f5;
+  --hover-color: #e90dda63;
+  --title-hover-color: #f3f87a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-color: rgb(0, 0, 0);
+    --background-start-color: #f3f4f6;
+    --background-end-color: #ffffff;
+    --primary-color: #a300f5;
+    --hover-color: #e90dda63;
+    --title-hover-color: #e0ee1a;
+  }
+}
+.certificates-container {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 80px;
+  display: grid;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certificate-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.certificate-description {
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.certs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
