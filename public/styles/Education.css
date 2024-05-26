@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-color: rgb(0, 0, 0);
+  --background-start-color: #f3f4f6;
+  --background-end-color: #ffffff;
+  --primary-color: #a300f5;
+  --hover-color: #e90dda63;
+  --title-hover-color: #f3f87a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-color: rgb(0, 0, 0);
+    --background-start-color: #f3f4f6;
+    --background-end-color: #ffffff;
+    --primary-color: #a300f5;
+    --hover-color: #e90dda63;
+    --title-hover-color: #e0ee1a;
+  }
+}
+
+.education-container {
+  background-color: var(--background-end-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.education-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+  flex: 0 0 auto;
+  max-width: calc(50% - 0.5rem);
+}
+
+.card:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.institution-name {
+  font-size: 1rem; 
+  font-weight: bold;
+  color: var(--foreground-color);
+  margin-bottom: 0.5rem;
+}
+
+.institution-level {
+  font-size: 0.875rem;
+  color: var(--foreground-color);
+  opacity: 0.7;
+}

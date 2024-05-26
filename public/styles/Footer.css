@@ -12,7 +12,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-:root {
+  :root {
     --foreground-color: rgb(0, 0, 0);
     --background-start-color: #f3f4f6;
     --background-end-color: #ffffff;
@@ -21,17 +21,37 @@
     --title-hover-color: #e0ee1a;
   }
 }
+
 .footer-container {
-    color: white;
-    padding: 1rem 0;
-    background-color: var(--primary-color);
-    color: white;
+  color: white;
+  padding: 1rem 0;
+  background-color: var(--primary-color);
+  border: black solid 2px;
 }
 
 .footer-box {
-    text-align: center;
+  text-align: center;
 }
 
 .footer-box p {
-    margin: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.footer-container {
+  width: 100%;
+  bottom: 0;
 }
