@@ -76,7 +76,6 @@
   opacity: 0.7;
 }
 
-/* Responsive utilities */
 @media (max-width: 640px) {
   .card {
     max-width: 100%;

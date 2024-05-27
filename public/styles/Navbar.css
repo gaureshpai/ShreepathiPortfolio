@@ -92,7 +92,6 @@
   @apply w-10 h-10;
 }
 
-/* Responsive utilities */
 @media (min-width: 340px) {
   .navbar {
     @apply flex justify-between items-center;

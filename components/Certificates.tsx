@@ -16,7 +16,6 @@ const Certificates = () => {
       provider: 'Infosys Springboard',
       date: 'Date of completion'
     },
-    // Add more certificates as needed
   ];
 
   return (

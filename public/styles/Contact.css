@@ -1,9 +1,8 @@
 .contact-container {
-  max-width: 600px;
+  max-width: 500px;
   margin: 50px auto;
   padding: 20px;
   text-align: center;
-  background-color: var(--background-end-color);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -40,13 +39,15 @@ textarea {
 }
 
 .submit-container {
-  width: 80%;
+  background-color: red;
+  border-radius: 5px;
+  color: white;
 }
 
 button {
   padding: 10px 20px;
-  background-color: var(--primary-color);
-  color: #ff0d0d;
+  background-color: #6b63ff;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -54,8 +55,9 @@ button {
 }
 
 button:hover {
-  background-color: var(--hover-color);
+  background-color: #9561e2;
 }
+
 
 .title{
   font-size: 1.5rem;
