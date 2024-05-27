@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <div className="navbar-sidebar">
       <nav className="navbar">
-        <div className="container mx-auto flex justify-between items-center p-4">
+        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center p-4">
           <a href="/" className="titleb">
             <Image
               src="/logo.png"
@@ -17,7 +17,7 @@ export default function Navbar() {
             />
             Shreepathi
           </a>
-          <div className="buttons-container-main">
+          <div className="buttons-container-main mt-4 sm:mt-0 sm:ml-auto">
             <div className="button-container">
               <a href="https://github.com/shree2307" target="_blank" rel="noopener noreferrer" className="buttons" title="GitHub">
                 <img src="github.png" alt="github" />

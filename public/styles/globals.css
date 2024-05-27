@@ -23,15 +23,27 @@
 }
 
 .main-layout {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  @apply flex flex-col h-screen;
 }
 
 .main-content {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding: 1rem;
-  overflow-y: auto;
+  @apply flex flex-col flex-1 p-4 overflow-y-auto;
+}
+
+@media (min-width: 640px) {
+  .main-content {
+    @apply p-6;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    @apply p-8;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    @apply p-12;
+  }
 }
