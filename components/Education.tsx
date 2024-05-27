@@ -4,10 +4,10 @@ import "../public/styles/Education.css";
 
 const Education = () => {
   const institutions = [
-    { name: 'Govt. Higher Primary School Guthinabailu', level: 'Primary', website: 'https://www.example.com/guthinabailu' },
-    { name: 'Govt. High School Savanalu', level: 'High School', website: 'https://www.example.com/savanalu' },
-    { name: 'Govt. Pre University College Belthangady', level: 'PU', website: 'https://www.example.com/belthangady' },
-    { name: 'A J Institute of Engineering and Technology', level: 'UG', website: 'https://www.example.com/ajinstitute' }
+    { name: 'Govt. Higher Primary School Guthinabailu', level: 'Primary', website: 'https://schools.org.in/dakshina-kannada/29240206501/dkzp-govt-higher-primary-school-guthina-bail.html' },
+    { name: 'Govt. High School Savanalu', level: 'High School', website: 'https://schools.org.in/dakshina-kannada/29240206503/nethaji-subhashchandra-bose-dkzp-govt-high-school-savanalu.html' },
+    { name: 'Govt. Pre University College Belthangady', level: 'PU', website: 'https://www.onemangalore.com/government-pre-university-college-belthangady/' },
+    { name: 'A J Institute of Engineering and Technology', level: 'UG', website: 'https://www.ajiet.edu.in/' }
   ];
 
   const handleRedirect = (website: string) => {
