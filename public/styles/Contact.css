@@ -46,7 +46,7 @@ textarea {
 button {
   padding: 10px 20px;
   background-color: var(--primary-color);
-  color: #fff;
+  color: #ff0d0d;
   border: none;
   border-radius: 5px;
   cursor: pointer;

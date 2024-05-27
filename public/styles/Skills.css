@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #a300f5;
+}
+
 .skills-wrapper {
   display: flex;
   justify-content: center;
@@ -56,4 +64,17 @@
   font-size: 0.9rem;
   color: #555;
   margin-bottom: 0.5rem;
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+  .skills-container {
+    margin: 0 20px;
+    padding: 1rem;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }

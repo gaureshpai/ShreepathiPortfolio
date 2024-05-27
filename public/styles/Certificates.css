@@ -21,6 +21,7 @@
     --title-hover-color: #e0ee1a;
   }
 }
+
 .certificates-container {
   padding: 2rem;
   border-radius: 10px;
@@ -67,4 +68,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+  .certs {
+    grid-template-columns: 1fr;
+  }
 }
