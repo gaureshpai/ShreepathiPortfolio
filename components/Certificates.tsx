@@ -6,13 +6,13 @@ const Certificates = () => {
   const certificates = [
     {
       title: 'Basics of Python',
-      image: '/certificate 1.jpg',
+      image: '/Certificate 1.jpg',
       provider: 'Infosys Springboard',
       date: '19 Febraury 2024'
     },
     {
       title: 'Time Management',
-      image: '/certificate 2.jpg',
+      image: '/Certificate 2.jpg',
       provider: 'Infosys Springboard',
       date: '13 Febraury 2024'
     },
