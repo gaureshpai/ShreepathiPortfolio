@@ -12,11 +12,11 @@ export default function Home() {
   return (
     <main>
       <Navbar/>
-        <About/>
-        <Education/>
-        <Certificates/>
-        <Skills/>
-        <Contact/>
+        <div id="about"><About /></div>
+        <div id="education"><Education/></div>
+        <div id="certificates"><Certificates/></div>
+        <div id="skills"><Skills/></div>
+        <div id="contact"><Contact/></div>
       <Footer/>
     </main>
   );

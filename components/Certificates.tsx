@@ -5,16 +5,16 @@ import "../public/styles/Certificates.css";
 const Certificates = () => {
   const certificates = [
     {
-      title: 'Certificate Title 1',
-      image: '/certificate1.jpg',
+      title: 'Basics of Python',
+      image: '/certificate 1.jpg',
       provider: 'Infosys Springboard',
-      date: 'Date of completion'
+      date: '19 Febraury 2024'
     },
     {
-      title: 'Certificate Title 2',
-      image: '/certificate2.jpg',
+      title: 'Time Management',
+      image: '/certificate 2.jpg',
       provider: 'Infosys Springboard',
-      date: 'Date of completion'
+      date: '13 Febraury 2024'
     },
   ];
 

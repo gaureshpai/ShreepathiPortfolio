@@ -39,13 +39,18 @@ textarea {
 }
 
 .submit-container {
-  background-color: red;
+  background-color: #6b63ff;
   border-radius: 5px;
   color: white;
+  padding: 10px 5px;
+}
+.submit-container:hover{
+    background-color: red;
+
 }
 
 button {
-  padding: 10px 20px;
+  padding: 10px 5px;
   background-color: #6b63ff;
   color: #fff;
   border: none;
@@ -53,11 +58,6 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
-button:hover {
-  background-color: #9561e2;
-}
-
 
 .title{
   font-size: 1.5rem;
