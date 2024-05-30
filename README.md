@@ -1,4 +1,4 @@
-# Shripathi Portfolio 
+# Shreepathi Portfolio 
 
 ## Technologies used:
 
