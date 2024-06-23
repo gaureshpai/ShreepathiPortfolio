@@ -1,3 +1,7 @@
+"use server"
+const { MongoClient } = require('mongodb');
+const uri = "mongodb+srv://paigauresh:shreepathishree7@cluster0.7blkaad.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const client = new MongoClient(uri);
 export async function connect() {
     try {
         await client.connect();
@@ -22,7 +26,7 @@ export async function fetchData(collectionName) {
     try {
         const database = client.db('info');
         const collection = database.collection(collectionName);
-        const data = await collection.find({}).toArray();
+        const data = JSON.parse(JSON.stringify(await collection.find({}).toArray()));
         return data;
     } catch (error) {
         console.error(`Error fetching ${collectionName}:`, error);

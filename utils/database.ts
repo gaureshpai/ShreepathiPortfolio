@@ -1,3 +1,4 @@
+"use server"
 import mongoose from "mongoose";
 const uri = "mongodb+srv://paigauresh:shreepathishree7@cluster0.7blkaad.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
