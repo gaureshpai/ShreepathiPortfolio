@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import "../public/styles/Contact.css";
+import { saveFormSubmit } from './form';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -17,14 +18,14 @@ const Contact: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData);
+    saveFormSubmit(Object.fromEntries(new FormData(e.currentTarget)));
     setFormData({
       name: '',
       email: '',
       message: ''
-    });
+    })
   };
 
   return (
