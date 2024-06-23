@@ -1,3 +1,6 @@
+const { MongoClient } = require('mongodb');
+const uri = "mongodb+srv://paigauresh:shreepathishree7@cluster0.7blkaad.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const client = new MongoClient(uri);
 export async function getSkills() {
     try {
         const database = client.db('info');
