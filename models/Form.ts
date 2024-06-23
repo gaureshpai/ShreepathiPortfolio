@@ -8,7 +8,7 @@ const FormSchema = new Schema({
         required: [true, 'Name is required!'],
     },
     email: {
-        type: email,
+        type: String,
         required: [true, 'Email is required!'],
     },
     message: {
@@ -18,4 +18,4 @@ const FormSchema = new Schema({
 
 });
 
-const Form = models.Form || model("Form", FormSchema);
+export const FormModel = models.Form || model("Form", FormSchema);
