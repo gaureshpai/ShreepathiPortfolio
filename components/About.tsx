@@ -23,12 +23,13 @@ const About = () => {
 
   return (
     <div className="container">
+      <br /><br /><br /><br /><br />
       <div className="about-container">
         <h2 className="section-title">About Me</h2>
         <div className="about-content">
           {aboutData.map((item) => (
             <div key={item?._id}>
-              <h3>{item.l1}</h3>
+              <p>{item.l1}</p>
               <p>{item.l2}</p>
               <p>{item.l3}</p>
               <p>{item.l4}</p>
