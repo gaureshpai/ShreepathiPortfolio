@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navbar from "../components/Navbar";
 import '../public/styles/globals.css';
 import Footer from "@/components/Footer";

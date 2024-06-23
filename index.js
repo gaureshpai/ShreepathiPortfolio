@@ -1,31 +1,24 @@
-const { MongoClient } = require("mongodb");
+'use server'
+const { connect, disconnect, getSkills, getAbout, getEducation, getCerts } = require('./db');
 
-const uri = "mongodb+srv://paigauresh:shreepathishree7@cluster0.7blkaad.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-
-const client = new MongoClient(uri);
-
-async function run() {
+export default async function run() {
     try {
-        await client.connect();
-        const database = client.db('info');
+        await connect();
 
-        // listing all the collections in the database
-        const collections = await database.listCollections().toArray();
+        const skills = await getSkills();
+        console.log('Skills:', skills);
 
-        // fetch its documents
-        for (let collection of collections) {
-            const collectionName = collection.name;
-            console.log(`Documents in collection '${collectionName}':`);
+        const about = await getAbout();
+        console.log('About:', about);
 
-            // all documents
-            const currentCollection = database.collection(collectionName);
-            const cursor = currentCollection.find({});
-            const documents = await cursor.toArray();
+        const education = await getEducation();
+        console.log('Education:', education);
 
-            console.log(documents);
-        }
+        const certs = await getCerts();
+        console.log('Certs:', certs);
+
     } finally {
-        await client.close();
+        await disconnect();
     }
 }
 

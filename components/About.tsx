@@ -1,23 +1,40 @@
-import React from 'react';
-import "../public/styles/About.css";
+'use client'
+import React, { useState, useEffect } from 'react';
+import { getAbout,connect} from '../db';
+import '@/public/styles/About.css';
 
 const About = () => {
+  const [aboutData, setAboutData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        await connect();
+
+        const about:any[] = await getAbout();
+        if (about) setAboutData(about);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
-    <div className="about-container">
-      <h2 className="section-title">About Me</h2>
-      <div className="about-content">
-        <p>
-          I am a Computer Science Engineering student currently studying at VTU. I have a passion for technology, and I am also a singer and dancer.
-        </p>
-        <p>
-          In my free time, I enjoy coding, practicing my singing, and exploring new dance routines.
-        </p>
-        <p>  
-          I believe in continuous learning and enjoy challenging myself to improve my skills in various areas.
-        </p>
-        <p>
-          Feel free to reach out to me if you have any questions or would like to collaborate on a project!
-        </p>
+    <div className="container">
+      <div className="about-container">
+        <h2 className="section-title">About Me</h2>
+        <div className="about-content">
+          {aboutData.map((item) => (
+            <div key={item?._id}>
+              <h3>{item.l1}</h3>
+              <p>{item.l2}</p>
+              <p>{item.l3}</p>
+              <p>{item.l4}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
