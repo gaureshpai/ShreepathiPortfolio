@@ -36,11 +36,13 @@ export async function fetchData(collectionName) {
 
 export async function getSkills() {
     try {
-        const skills = await fetchData('skills');
+        const database = client.db('info');
+        const collection = database.collection('skills');
+        const skills = await collection.find({}).toArray();
         return skills;
     } catch (error) {
-        console.error("Error fetching skills:", error);
-        return null;
+        console.error("Error fetching skills data:", error);
+        return [];
     }
 }
 

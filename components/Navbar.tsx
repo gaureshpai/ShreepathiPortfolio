@@ -56,6 +56,7 @@ export default function Navbar() {
           <li><a href="#contact" title="Contact"><img src="/contact.png" alt="contact" className="" /></a></li>
         </ul>
       </aside>
+      <br />
     </div>
   );
 }

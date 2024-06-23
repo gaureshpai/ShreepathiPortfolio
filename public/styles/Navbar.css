@@ -30,7 +30,8 @@
 .navbar {
   background: linear-gradient(135deg, var(--primary-color) 0%, #6500a3 100%);
   color: white;
-  @apply p-4 border-2 border-black shadow-md rounded-lg;
+  width: 100vw;
+  @apply p-4 border-2 border-black shadow-md rounded-lg fixed;
 }
 
 .titleb {
@@ -82,10 +83,12 @@
 
 .sidebar a {
   @apply text-white no-underline transition-colors duration-300;
+  cursor: pointer;
 }
 
 .sidebar a:hover {
   color: var(--title-hover-color);
+  top: 20%
 }
 
 .sidebar img {

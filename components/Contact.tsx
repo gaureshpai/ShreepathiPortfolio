@@ -30,6 +30,7 @@ const Contact: React.FC = () => {
 
   return (
     <div className="contact-container">
+      <br /><br /><br /><br /><br />
       <h2 className='title'>Contact Me</h2>
       <p>If you have any questions, feedback, or collaboration opportunities, feel free to reach out to me.</p>
       <form className="form-container" onSubmit={handleSubmit}>
