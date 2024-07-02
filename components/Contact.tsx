@@ -9,6 +9,7 @@ const Contact: React.FC = () => {
     email: '',
     message: ''
   });
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -18,14 +19,17 @@ const Contact: React.FC = () => {
     }));
   };
 
-  const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     saveFormSubmit(Object.fromEntries(new FormData(e.currentTarget)));
     setFormData({
       name: '',
       email: '',
       message: ''
-    })
+    });
+    setIsSubmitted(true);
+    window.alert('Your message has been sent successfully!');
+    setTimeout(() => setIsSubmitted(false), 3000);
   };
 
   return (
