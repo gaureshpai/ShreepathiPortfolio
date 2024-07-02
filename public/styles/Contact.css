@@ -39,22 +39,22 @@ textarea {
 }
 
 .submit-container {
-  background-color: #6b63ff;
+  background-color: #a300f5;
   border-radius: 5px;
   color: white;
   padding: 10px 5px;
 }
+
 .submit-container:hover{
     background-color: red;
-
 }
 
 button {
-  padding: 10px 5px;
+  padding: 12px 20px;
   background-color: #6b63ff;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
