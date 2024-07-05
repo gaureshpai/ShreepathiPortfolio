@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import "../public/styles/Contact.css";
 import { saveFormSubmit, getAllMessages } from './form';
+import Link from 'next/link';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -32,7 +33,7 @@ const Contact: React.FC = () => {
     window.alert('Your message has been sent successfully!');
     setTimeout(() => setIsSubmitted(false), 3000);
 
-    if (saveResponse === true) { 
+    if (saveResponse === true) {
       const messagesResponse = await getAllMessages();
       if (messagesResponse.success) {
         window.alert(`Number of messages: ${messagesResponse.count}`);
@@ -66,6 +67,10 @@ const Contact: React.FC = () => {
           <button type="submit">Send Message</button>
         </div>
       </form>
+
+      <div className="view-messages-container">
+        <Link href={'/contact'}>View All Messages</Link>
+      </div>
     </div>
   );
 }
