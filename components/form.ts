@@ -10,3 +10,21 @@ export const saveFormSubmit = async(form)=>{
     return false;
   }
 }
+
+export const getAllMessages = async () => {
+  try {
+    const allForms = await FormModel.find({});
+    return {
+      success: true,
+      count: allForms.length,
+      messages: allForms
+    };
+  } catch (error) {
+    console.error('Error retrieving messages:', error);
+    return {
+      success: false,
+      count: 0,
+      messages: []
+    };
+  }
+}

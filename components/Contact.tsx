@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import "../public/styles/Contact.css";
-import { saveFormSubmit } from './form';
+import { saveFormSubmit, getAllMessages } from './form';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +21,8 @@ const Contact: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    saveFormSubmit(Object.fromEntries(new FormData(e.currentTarget)));
+    const saveResponse = await saveFormSubmit(Object.fromEntries(new FormData(e.currentTarget)) as Record<string, any>);
+
     setFormData({
       name: '',
       email: '',
@@ -30,6 +31,17 @@ const Contact: React.FC = () => {
     setIsSubmitted(true);
     window.alert('Your message has been sent successfully!');
     setTimeout(() => setIsSubmitted(false), 3000);
+
+    if (saveResponse === true) { 
+      const messagesResponse = await getAllMessages();
+      if (messagesResponse.success) {
+        window.alert(`Number of messages: ${messagesResponse.count}`);
+      } else {
+        window.alert('There was an error retrieving messages.');
+      }
+    } else {
+      window.alert('There was an error submitting your message.');
+    }
   };
 
   return (
