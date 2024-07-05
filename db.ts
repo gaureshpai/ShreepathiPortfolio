@@ -8,7 +8,7 @@ export async function connect() {
         console.log("Connected to MongoDB");
     } catch (error) {
         console.error("Error connecting to MongoDB:", error);
-        throw error; // Rethrow the error to handle it in the calling function
+        throw error; 
     }
 }
 
@@ -18,7 +18,7 @@ export async function disconnect() {
         console.log("Disconnected from MongoDB");
     } catch (error) {
         console.error("Error disconnecting from MongoDB:", error);
-        throw error; // Rethrow the error to handle it in the calling function
+        throw error; 
     }
 }
 

@@ -65,3 +65,21 @@ button {
   color: var(--primary-color);
   margin-bottom: 1rem;
 }
+
+.view-messages-container {
+  margin-top: 20px;
+}
+
+.view-messages-container a {
+  display: inline-block;
+  background-color: #a300f5;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.view-messages-container a:hover {
+  background-color: red;
+}
