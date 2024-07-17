@@ -21,27 +21,27 @@ export default function Navbar() {
           <div className="buttons-container-main mt-4 sm:mt-0 sm:ml-auto">
             <div className="button-container">
               <a href="https://github.com/shree2307" target="_blank" rel="noopener noreferrer" className="buttons" title="GitHub">
-                <img src="github.png" alt="github" />
+                <img src="github.png" alt="GitHub" />
               </a>
             </div>
             <div className="button-container">
               <a href="https://linkedin.com/in/shreepathi7" target="_blank" rel="noopener noreferrer" className="buttons" title="LinkedIn">
-                <img src="linkedin.png" alt="linkedin" />
+                <img src="linkedin.png" alt="LinkedIn" />
               </a>
             </div>
             <div className="button-container">
               <a href="https://www.instagram.com/mr_shree__acharya_/" target="_blank" rel="noopener noreferrer" className="buttons" title="Instagram">
-                <img src="insta.png" alt="instagram" />
+                <img src="insta.png" alt="Instagram" />
               </a>
             </div>
             <div className="button-container">
               <a href="tel:+919686310381" className="buttons" title="Phone">
-                <img src="call.png" alt="phone" />
+                <img src="call.png" alt="Phone" />
               </a>
             </div>
             <div className="button-container">
-              <a href="Mailto:shreepathishree7@gmail.com" target="_blank" rel="noopener noreferrer" className="buttons" title="Mailto">
-                <img src="/mailto.png" alt="mailto" />
+              <a href="mailto:shreepathishree7@gmail.com" target="_blank" rel="noopener noreferrer" className="buttons" title="Mailto">
+                <img src="/mailto.png" alt="Mailto" />
               </a>
             </div>
           </div>
@@ -49,11 +49,11 @@ export default function Navbar() {
       </nav>
       <aside className="sidebar">
         <ul>
-          <li><a href="#about" title="About"><img src="/about.png" alt="about" className="" /></a></li>
-          <li><a href="#education" title="Education"><img src="/education.png" alt="education" className="" /></a></li>
-          <li><a href="#certificates" title="Certificates"><img src="/cert.png" alt="certificates" className="" /></a></li>
-          <li><a href="#skills" title="Skills"><img src="/skills.png" alt="skills" className="" /></a></li>
-          <li><a href="#contact" title="Contact"><img src="/contact.png" alt="contact" className="" /></a></li>
+          <li><a href="/#about" title="About"><img src="/about.png" alt="About" className="" /></a></li>
+          <li><a href="/#education" title="Education"><img src="/education.png" alt="Education" className="" /></a></li>
+          <li><a href="/#certificates" title="Certificates"><img src="/cert.png" alt="Certificates" className="" /></a></li>
+          <li><a href="/#skills" title="Skills"><img src="/skills.png" alt="Skills" className="" /></a></li>
+          <li><a href="/#contact" title="Contact"><img src="/contact.png" alt="Contact" className="" /></a></li>
         </ul>
       </aside>
       <br />

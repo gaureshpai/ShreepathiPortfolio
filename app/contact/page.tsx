@@ -25,16 +25,17 @@ const MessagesPage: React.FC = () => {
 
     return (
         <div className="messages-container">
-            <br /><br /><br /><br />
-            <h2 className="title">All Messages</h2>
-            <div className="messages-list">
-                {messages.map((message, index) => (
-                    <div key={index} className="message-item">
-                        <h3>{message.name}</h3>
-                        <p>Email: {message.email}</p>
-                        <p>Message: {message.message}</p>
-                    </div>
-                ))}
+            <div className='messages'>
+                <h2 className="title">All Messages</h2>
+                <div className="messages-list">
+                    {messages.map((message, index) => (
+                        <div key={index} className="message-item">
+                            <h3>{message.name}</h3>
+                            <p>Email: {message.email}</p>
+                            <p>Message: {message.message}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
