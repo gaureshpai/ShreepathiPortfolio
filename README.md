@@ -36,7 +36,7 @@ shreepathi-portfolio/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/gaureshpai/portfolio.git
    cd portfolio
    ```
 
@@ -83,7 +83,7 @@ This project is licensed under the MIT License.
 
 For any questions or suggestions, feel free to reach out:
 
-- **Email**: [your-email@example.com](mailto:shreepathishree7@gmail.com)
-- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/shreepathi7)
+- **Email**: [mailto:shreepathishree7@gmail.com]
+- **LinkedIn**: [https://linkedin.com/in/shreepathi7]
 
 Thank you for visiting my portfolio repository! Don't forget to star the repo if you found it useful! 🌟
