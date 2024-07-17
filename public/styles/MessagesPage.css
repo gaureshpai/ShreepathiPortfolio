@@ -6,6 +6,7 @@
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .title {
@@ -23,7 +24,7 @@
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
 }
 
@@ -32,13 +33,18 @@
 }
 
 .message-item h3 {
-  font-size: 20px; 
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 .message-item p {
   margin-bottom: 8px;
   line-height: 1.5;
+}
+
+.messages {
+  overflow-y: scroll;
+  max-height: 70vh;
 }
 
 @media (min-width: 768px) {
