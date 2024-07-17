@@ -83,7 +83,7 @@ This project is licensed under the MIT License.
 
 For any questions or suggestions, feel free to reach out:
 
-- **Email**: [mailto:shreepathishree7@gmail.com]
-- **LinkedIn**: [https://linkedin.com/in/shreepathi7]
+- [Email](mailto:shreepathishree7@gmail.com)
+- [LinkedIn](https://linkedin.com/in/gaureshpai)
 
 Thank you for visiting my portfolio repository! Don't forget to star the repo if you found it useful! 🌟
