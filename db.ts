@@ -1,7 +1,6 @@
 "use server"
 const { MongoClient } = require('mongodb');
-const uri = "mongodb+srv://paigauresh:shreepathishree7@cluster0.7blkaad.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-const client = new MongoClient(uri);
+const client = new MongoClient(process.env.MONGODB_URL);
 export async function connect() {
     try {
         await client.connect();
