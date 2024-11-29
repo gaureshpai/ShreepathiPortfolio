@@ -49,11 +49,11 @@ export default function Navbar() {
       </nav>
       <aside className="sidebar">
         <ul>
-          <li><a href="/#about" title="About"><img src="/about.png" alt="About" className="" /></a></li>
-          <li><a href="/#education" title="Education"><img src="/education.png" alt="Education" className="" /></a></li>
-          <li><a href="/#certificates" title="Certificates"><img src="/cert.png" alt="Certificates" className="" /></a></li>
-          <li><a href="/#skills" title="Skills"><img src="/skills.png" alt="Skills" className="" /></a></li>
-          <li><a href="/#contact" title="Contact"><img src="/contact.png" alt="Contact" className="" /></a></li>
+          <li><a href="/#about" title="About"><img src="/about.png" alt="About" /></a></li>
+          <li><a href="/#education" title="Education"><img src="/education.png" alt="Education" /></a></li>
+          <li><a href="/#certificates" title="Certificates"><img src="/cert.png" alt="Certificates" /></a></li>
+          <li><a href="/#skills" title="Skills"><img src="/skills.png" alt="Skills" /></a></li>
+          <li><a href="/#contact" title="Contact"><img src="/contact.png" alt="Contact" /></a></li>
         </ul>
       </aside>
       <br />
