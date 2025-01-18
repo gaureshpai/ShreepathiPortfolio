@@ -13,10 +13,10 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "mongodb": "^6.12.0",
     "mongoose": "^8.9.5",
-    "next": "^15.1.2",
+    "next": "^15.1.5",
     "react": "^19",
     "react-dom": "^19",
-    "react-router-dom": "^7.1.0"
+    "react-router-dom": "^7.1.3"
   },
   "devDependencies": {
     "@types/node": "^22",
